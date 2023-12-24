@@ -1,5 +1,5 @@
 #toma la version actual de java en la que creara la imagen
-FROM openjdk:17
+FROM amazoncorretto:17-alpine-jdk
 
 #crea una nueva carpeta en donde se creara la imagen
 #WORKDIR /app
