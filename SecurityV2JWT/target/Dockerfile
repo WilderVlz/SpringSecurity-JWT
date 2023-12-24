@@ -10,4 +10,4 @@ WORKDIR /app
 COPY SecurityV2JWT-0.0.1-SNAPSHOT.jar /app/SecurityV2JWT-0.0.1-SNAPSHOT.jar
 
 #indica la forma o el medio que inicializara la app
-CMD["java", "-jar", "SecurityV2JWT-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "SecurityV2JWT-0.0.1-SNAPSHOT.jar"]
