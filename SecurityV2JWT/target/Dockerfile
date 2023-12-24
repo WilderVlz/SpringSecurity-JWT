@@ -2,12 +2,12 @@
 FROM openjdk:17
 
 #crea una nueva carpeta en donde se creara la imagen
-WORKDIR /app
+#WORKDIR /app
 
 #copia el jar que contiene todo lo necesario para correr la app
 #junto con las dependencias y recursos compilados
 #posteriormente le indicamos en que ruta lo debe copiar
-COPY SecurityV2JWT-0.0.1-SNAPSHOT.jar /app/SecurityV2JWT-0.0.1-SNAPSHOT.jar
+COPY target/SecurityV2JWT-0.0.1-SNAPSHOT.jar app.jar
 
 #indica la forma o el medio que inicializara la app
-ENTRYPOINT ["java", "-jar", "SecurityV2JWT-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
